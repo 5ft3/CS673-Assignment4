@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/quotestyles.css') }}">
+  </head>
+
+  <body>
+    <div>
+      <form action = "http://localhost:5000/quotes">
+        <p>Quote: {{ quote }}</p> 
+        <p>Author: {{ author }}</p>
+      </form>
+    </div>
+  </body>
+  
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/weather3.css') }}" >
+    <link href="https://tomlutzenberger.github.io/meteocons.css/dist/meteocons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div>
+
+        <div class="main container">
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 weather-panel">
+                  <div class="col-xs-6">
+                    <h2>{{ location }}, {{ country_show }}<br><small>{{ date2 }}</small></h2>
+                    <p class="h3"><i class="mi mi-fw mi-lg mi-rain-heavy"></i> {{ weather_desc }}</p>
+                  </div>
+                  <div class="col-xs-6 text-center">
+                    <div class="h1 temperature">
+                      <span>{{ temp }}°</span>
+                      <br>
+                    </div>
+                    <div class = "minmax">{{ temp_min }}° / {{ temp_max }}°</div>
+                  </div>
+                  <div class="col-xs-12">
+                    <li><p><i class="feels-like"></i><br>Feels like: {{ feels_like }}°</p></li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </body>
+  
+</html>

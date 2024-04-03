@@ -1,0 +1,12 @@
+div
+{ 
+  color: #168a8a; 
+
+  font-family: 'Helvetica Neue', 
+  sans-serif; 
+  font-size: 5rem; 
+  /* line-height: 24px; 
+  margin: 5 5 24px;  */
+  text-align: center; 
+  text-justify: inter-word; 
+}
