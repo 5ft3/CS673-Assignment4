@@ -6,7 +6,6 @@ from datetime import date
  
 app = Flask(__name__)
 
-
 @app.route('/success/<zip>, <country>')
 def success(zip, country):
     #find lat and lon from user input
@@ -49,7 +48,6 @@ def success(zip, country):
     today = date.today()
     date2 = today.strftime("%B %d, %Y")
     return render_template('weather.html', today=date2, temp=temp, weather_desc=weather_desc, temp_min=temp_min, temp_max=temp_max, location=location, country_show=country_show,  feels_like =  feels_like )
-
 
 @app.route('/weatherindex', methods=['POST', 'GET'])
 def login():
